@@ -75,7 +75,7 @@ body { background-color: #f1efe9 }
  h3, 
  h4 { font-family: sans-serif; font-weight: bold; line-height: 1.2 }
  
- h2 { letter-spacing: 1px text-transform: uppercase }
+ h2 { letter-spacing: 1px; text-transform: uppercase }
 
 
   /* Desktop */
@@ -98,7 +98,7 @@ body { background-color: #f1efe9 }
 
  /* Desktop */
  @media all and (min-width:768px) {
-     p { font-size: 18px; line-height: 1.6; margin-bottom: 1.5% }
+     p { font-size: 18px; line-height: 1.6; margin-bottom: 2.5% }
  }
 
  /* Mobiles */
@@ -108,10 +108,12 @@ body { background-color: #f1efe9 }
 
 
  /* ==== BULLETS ==== */
+
  li { font-family: sans-serif; margin-left: 17px }
 
  /* Desktop */
  @media all and (min-width:768px) {
+      ul { margin-bottom: 2.5% }
       li { 
       font-size: 18px; line-height: 1.7; 
       margin-bottom: 1%
@@ -120,8 +122,9 @@ body { background-color: #f1efe9 }
 
  /* Mobiles */
  @media all and (max-width:767px) {
+	ul { margin-bottom: 5% }
       li  { 
-      font-size: 15 px; line-height: 1.4;
+      font-size: 15px; line-height: 1.4;
       margin-bottom: 4%
       }
  }
@@ -182,9 +185,10 @@ body { background-color: #f1efe9 }
 
 /* ==== DIV - HIGHLIGHTED BLOCK ==== */
 
-.box-highlight { background-color: #d4c6e6  }
+.box-highlight { background-color: #d4c6e6 }
 .box-highlight h4 { margin-top: 0 }
 .box-highlight p:last-child { margin-bottom: 0 }
+.box-highlight ul { margin-bottom: 0 }
 .box-highlight ul li:last-child { margin-bottom: 0 }
 
 /* Desktop */
@@ -199,6 +203,3 @@ body { background-color: #f1efe9 }
 	.box-highlight { padding: 12px 14px }
 }
 
-
-
- 

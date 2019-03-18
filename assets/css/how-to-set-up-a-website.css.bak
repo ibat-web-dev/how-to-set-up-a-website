@@ -75,7 +75,7 @@ body { background-color: #f1efe9 }
  h3, 
  h4 { font-family: sans-serif; font-weight: bold; line-height: 1.2 }
  
- h2 { letter-spacing: 1px text-transform: uppercase }
+ h2 { letter-spacing: 1px; text-transform: uppercase }
 
 
   /* Desktop */
@@ -98,7 +98,7 @@ body { background-color: #f1efe9 }
 
  /* Desktop */
  @media all and (min-width:768px) {
-     p { font-size: 18px; line-height: 1.6; margin-bottom: 1.5% }
+     p { font-size: 18px; line-height: 1.6; margin-bottom: 2.5% }
  }
 
  /* Mobiles */
@@ -108,10 +108,12 @@ body { background-color: #f1efe9 }
 
 
  /* ==== BULLETS ==== */
+
  li { font-family: sans-serif; margin-left: 17px }
 
  /* Desktop */
  @media all and (min-width:768px) {
+      ul { margin-bottom: 2.5% }
       li { 
       font-size: 18px; line-height: 1.7; 
       margin-bottom: 1%
@@ -120,8 +122,9 @@ body { background-color: #f1efe9 }
 
  /* Mobiles */
  @media all and (max-width:767px) {
+	ul { margin-bottom: 5% }
       li  { 
-      font-size: 15 px; line-height: 1.4;
+      font-size: 15px; line-height: 1.4;
       margin-bottom: 4%
       }
  }
@@ -137,6 +140,71 @@ body { background-color: #f1efe9 }
  @media all and (min-width:768px) {
      img { margin-bottom: 1% }
  }
+
+
+/* ==== DIV - INTRODUCTION ==== */
+
+.box-introduction { 
+	width: 90%;
+	border-bottom-style: solid; 
+	border-bottom-color: #dcd8cf;
+	width: 90%;
+}
+
+.box-introduction p { font-family: serif; font-style: italic; text-align: center }
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.box-introduction { 
+		margin: 2% auto 6% auto;
+		padding-bottom: 20px;
+		border-bottom-width: 12px
+	}
+
+	.box-introduction p { 
+		line-height: 1.4; 
+		font-size: 28px; 
+	}
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.box-introduction { 
+		width: 90%;
+		margin: 2% auto 10% auto;
+		padding-bottom: 10px;
+		border-bottom-width: 6px
+	}
+
+	.box-introduction p { 
+		line-height: 1.3; 
+		font-size: 20px; 
+	}
+}
+
+
+/* ==== DIV - HIGHLIGHTED BLOCK ==== */
+
+.box-highlight { background-color: #d4c6e6 }
+.box-highlight h4 { margin-top: 0 }
+.box-highlight p:last-child { margin-bottom: 0 }
+.box-highlight ul { margin-bottom: 0 }
+.box-highlight ul li:last-child { margin-bottom: 0 }
+
+/* Desktop */
+@media all and (min-width:768px) { 
+	.box-highlight { margin-top: 4%; margin-bottom: 6% }
+	.box-highlight { padding: 12px 20px }
+}
+
+/* Mobiles */
+@media all and (max-width:767px) { 
+	.box-highlight { margin-top:2%; margin-bottom: 10% }
+	.box-highlight { padding: 12px 14px }
+}
+
+
+
 
 
  
